@@ -1,0 +1,26 @@
+h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+}
+h1{
+    text-transform: uppercase; 
+}
+P{
+    font-style: italic;
+    text-align: center;
+}
+input.ng-touched.ng-invalid{
+    border: 1px solid red;
+}
+
+input.ng-touched.ng-valid{
+    border: 1px solid green;
+}
+.container{
+    background: orange;
+}
+.content-body{
+    background:whitesmoke;
+}

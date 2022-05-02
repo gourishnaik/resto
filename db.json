@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "id": 6,
+      "name": "gourish",
+      "email": "gourish@gmail.com",
+      "mobile": 8217372238,
+      "address": "asnoti",
+      "services": "chai pani"
+    },
+    {
+      "id": 7,
+      "name": "uopu",
+      "email": "puo@gmail.com",
+      "mobile": 4545454541,
+      "address": "karwar",
+      "services": "chai m"
+    },
+    {
+      "id": 8,
+      "name": "wash naik",
+      "email": "yash@gmail.com",
+      "mobile": 9856458356,
+      "address": "asnoti , karwar",
+      "services": "chai"
+    },
+    {
+      "id": 9,
+      "name": "jackma",
+      "email": "jack@gmail.com",
+      "mobile": 8596856478,
+      "address": "asnoti",
+      "services": "chai"
+    },
+    {
+      "id": 10,
+      "name": "jayesh",
+      "email": "jayesh@gmail.com",
+      "mobile": 5264565452,
+      "address": "asnoti",
+      "services": "chai"
+    },
+    {
+      "id": 11,
+      "name": "max",
+      "email": "max@gmail.com",
+      "mobile": 9696965478,
+      "address": "asnoti",
+      "services": "chai"
+    },
+    {
+      "id": 12,
+      "name": "jamck",
+      "email": "jamck@gmail.com",
+      "mobile": 9851456245,
+      "address": "asnoty",
+      "services": "dosa"
+    }
+  ],
+  "comments": [],
+  "signup": [
+    {
+      "name": "gourish",
+      "email": "gourishnaik050@gmail.com",
+      "mobile": 8271215636,
+      "password": "123456",
+      "id": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
