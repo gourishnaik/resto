@@ -2,59 +2,51 @@
   "posts": [
     {
       "id": 6,
-      "name": "gourish",
-      "email": "gourish@gmail.com",
-      "mobile": 8217372238,
-      "address": "asnoti",
+      "name": "max",
+      "email": "max@gmail.com",
+      "mobile": 3817372234,
+      "address": "raipur",
       "services": "chai pani"
     },
     {
       "id": 7,
-      "name": "uopu",
-      "email": "puo@gmail.com",
+      "name": "jam",
+      "email": "jam@gmail.com",
       "mobile": 4545454541,
-      "address": "karwar",
+      "address": "raipur",
       "services": "chai m"
     },
     {
       "id": 8,
-      "name": "wash naik",
+      "name": "marsh",
       "email": "yash@gmail.com",
-      "mobile": 9856458356,
-      "address": "asnoti , karwar",
+      "mobile": 9856458352,
+      "address": "delhi",
       "services": "chai"
     },
     {
       "id": 9,
-      "name": "jackma",
+      "name": "jack",
       "email": "jack@gmail.com",
-      "mobile": 8596856478,
-      "address": "asnoti",
+      "mobile": 9696565658,
+      "address": "europe",
       "services": "chai"
     },
     {
       "id": 10,
-      "name": "jayesh",
-      "email": "jayesh@gmail.com",
-      "mobile": 5264565452,
-      "address": "asnoti",
+      "name": "abc ",
+      "email": "abc@gmail.com",
+      "mobile": 9689858965,
+      "address": "delhi",
       "services": "chai"
     },
     {
       "id": 11,
-      "name": "max",
-      "email": "max@gmail.com",
-      "mobile": 9696965478,
-      "address": "asnoti",
+      "name": "jeet",
+      "email": "jam@gmail.com",
+      "mobile": 9898589856,
+      "address": "gujrat",
       "services": "chai"
-    },
-    {
-      "id": 12,
-      "name": "jamck",
-      "email": "jamck@gmail.com",
-      "mobile": 9851456245,
-      "address": "asnoty",
-      "services": "dosa"
     }
   ],
   "comments": [],
@@ -65,6 +57,13 @@
       "mobile": 8271215636,
       "password": "123456",
       "id": 1
+    },
+    {
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "mobile": 9658974568,
+      "password": "123456",
+      "id": 2
     }
   ],
   "profile": {

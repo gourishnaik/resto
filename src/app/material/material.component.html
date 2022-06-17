@@ -18,20 +18,50 @@
 <div> 
 
 
+<!---
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>password</mat-label>
+        <input formControlName="password" matInput [type]="hide ? 'password': 'text'  " required />
+    <p mat-icon-buton matSuffix (click)="hide = !hide"
+    
+        [attr.aria-label]="'Hide password'" [attr.aira-pressed]="hide">
+        <mat-icon>{{ hide ? 'visibility_off':'visibility'}}</mat-icon>
+    </p>
+    
+    
+        <mat-error *ngIf="loginForm.get('password')">
+        password is required
+        </mat-error>
+          </mat-form-field>        -->            
+
+<!--main-->
+
 <mat-form-field class="full-width" appearance="outline">
-    <mat-label>password</mat-label>
-    <input formControlName="password" matInput [type]="hide ? 'password': 'text' " required />
-<p mat-icon-buton matSuffix (click)="hide = !hide"
+    <mat-label>Password</mat-label>
+    <input matInput formControlName="password" [type]="showPassword ? 'text' : 'password'" name="password" required />
+    <mat-icon matSuffix (click)="togglePasswordVisibility()">
+     
+        {{showPassword?'visibility_off':'visibility'}}
+    </mat-icon>
 
-    [attr.aria-label]="'Hide password'" [attr.aira-pressed]="hide">
-    <mat-icon>{{ hide ? 'visibility_off':'visibility'}}</mat-icon>
-</p>
-
-
-    <mat-error *ngIf="loginForm.get('password')">
+<mat-error *ngIf="loginForm.get('password')">
     password is required
     </mat-error>
       </mat-form-field>
+
+<!--end extra -->
+
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
     <button mat-flat-button color="primary">Login</button>

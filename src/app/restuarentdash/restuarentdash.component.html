@@ -19,6 +19,11 @@
       <br>
     </div>
   </div>
+<br>
+
+  <div class="form-outline">
+  <input type="text"style="width:200px;margin-left:20px"[(ngModel)]="userFilter.name"class="form-control"placeholder="name">
+</div>
 
 <!----Table-->
 <div class="table-responsive"> 
@@ -35,7 +40,7 @@
         </tr>
     </thead>
 <tbody>
-    <tr *ngFor="let data of allResturentData">
+    <tr *ngFor="let data of allResturentData |filterBy:userFilter|paginate:{itemsPerPage:5,currentPage:page,totalItems:totalLength}">
         <td>{{data.id}}</td>
         <td>{{data.name}}</td>
         <td>{{data.email}}</td>
@@ -55,7 +60,10 @@
 
 </table>
 
-
+   <!--pagination-->
+ <div class="pagination">
+  <pagination-controls (pageChange)="page=$event"></pagination-controls>
+ </div>
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

@@ -5,11 +5,12 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { RestuarentdashComponent } from './restuarentdash/restuarentdash.component';
 import { MaterialComponent } from './material/material.component';
+import { AuthGuard } from './share/auth.guard';
 
 const routes:Routes =[
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent},
-  {path:'resturent',component:RestuarentdashComponent},
+  {path:'resturent',component:RestuarentdashComponent,canActivate:[AuthGuard]},
   {path:'material',component:MaterialComponent},
   {path:'',redirectTo:'login',pathMatch:'full'}
 ]

@@ -10,17 +10,19 @@ import { ResturentData } from './resturent.model';
   styleUrls: ['./restuarentdash.component.css']
 })
 export class RestuarentdashComponent implements OnInit {
-
+userFilter:any={name:''};
+ totalLength:any;
+ page:number=1;
   formValue!:FormGroup
   restaurentModelObj:ResturentData = new ResturentData;
-  allResturentData!:any;
+  allResturentData:any;
   
   //button disabes add & update
   showadd!:boolean;
   showbtn!:boolean;
 
 
-  constructor(private formbuilder:FormBuilder, private api:ApiService) { }
+  constructor(private formbuilder:FormBuilder, private api:ApiService)    { }
 
   ngOnInit(): void {
     //alert("hello welcome to Our page")
@@ -34,12 +36,16 @@ export class RestuarentdashComponent implements OnInit {
     this.getAlldata()    // to rendeer on screen data
 
   }
-
+ 
+  
 clickaddresto(){
   this.formValue.reset();
   this.showadd=true;
   this.showbtn=false; //update
 }
+
+
+
 
 //now subscribe our data via services 
 
@@ -82,9 +88,9 @@ this.allResturentData = res;
 //delete method to delete records
 
 deleteResto(data:any){
-  if(confirm('Are you sure to delete record ?'))    // alert
+  if(confirm('Are you sure to delete record?'))
   this.api.deleteResturent(data.id).subscribe(res=>{
-    alert("record deleted sucessfully")                 // alert
+    alert("Record deleted sucessfully")
     this.getAlldata();                  // latest data before refresh
   })
 }
@@ -126,8 +132,6 @@ err=>{
   alert("something went wrong!!!");
 })
 }
-
-
 
 
 

@@ -34,6 +34,10 @@ if(user){
   alert("sucessfully logged in")
   this.formValues.reset();
   this.router.navigate(['resturent'])
+ 
+ 
+  localStorage.setItem('token',"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c")
+  this.formValues.value.emailid? localStorage.setItem('usertype','employee'):''
 }else{
   alert("user not found with these credentials")
 }

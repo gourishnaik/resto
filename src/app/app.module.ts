@@ -13,6 +13,10 @@ import { MaterialComponent } from './material/material.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
+import { NgxPaginationModule } from 'ngx-pagination';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { FilterPipeModule } from 'ngx-filter-pipe';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +24,8 @@ import {MatIconModule} from '@angular/material/icon';
     RestuarentdashComponent,
     LoginComponent,
     SignupComponent,
-    MaterialComponent
+    MaterialComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,10 @@ import {MatIconModule} from '@angular/material/icon';
     MatButtonModule,
     MatInputModule,
     MatIconModule,
-    BrowserAnimationsModule
+    NgxPaginationModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    FilterPipeModule
   ],
   
   providers: [],

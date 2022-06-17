@@ -9,7 +9,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./material.component.css']
 })
 export class MaterialComponent implements OnInit {
- hide:any
+  hide:any
+ public showPassword: boolean = false;  //password 
+
    loginForm!:FormGroup;
   constructor(private formbuilder:FormBuilder,private http:HttpClient,private router:Router) { }
 
@@ -54,7 +56,9 @@ export class MaterialComponent implements OnInit {
     }
 
 
-
+    togglePasswordVisibility(){
+      this.showPassword = !this.showPassword;
+    }
 
 
 
