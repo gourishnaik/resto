@@ -1,0 +1,8 @@
+{
+    "STORE_ID": 655,
+    "BUILD_CONFIGURATION_TYPE": "release",
+    "BASE_URL": "http://noqsystem.com:60010/api/ols/",
+    "CLIENT_APP_VERSION_NAME": "Tanishq2web-1.0.0",
+    "CLIENT_APP_VERSION_CODE": "1",
+    "FRONT_END_URL": "http://campionsoftware.co.in/#/Wawbiz"
+}

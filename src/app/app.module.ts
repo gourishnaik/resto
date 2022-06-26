@@ -16,6 +16,9 @@ import {MatIconModule} from '@angular/material/icon';
 import { NgxPaginationModule } from 'ngx-pagination';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FilterPipeModule } from 'ngx-filter-pipe';
+import { NgToastModule } from 'ng-angular-popup';
+
+
 
 
 @NgModule({
@@ -40,7 +43,9 @@ import { FilterPipeModule } from 'ngx-filter-pipe';
     NgxPaginationModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    FilterPipeModule
+    FilterPipeModule,
+    NgToastModule
+    
   ],
   
   providers: [],
