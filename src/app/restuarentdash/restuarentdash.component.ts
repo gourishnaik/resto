@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormBuilder,Validator,FormControl, Validators} from '@angular/forms';
 import { ApiService } from '../shared/api.service';
 import { ResturentData } from './resturent.model';
-
+import{NgToastService} from 'ng-angular-popup';
 
 @Component({
   selector: 'app-restuarentdash',
@@ -22,7 +22,7 @@ userFilter:any={name:''};
   showbtn!:boolean;
 
 
-  constructor(private formbuilder:FormBuilder, private api:ApiService)    { }
+  constructor(private formbuilder:FormBuilder, private api:ApiService,private toast:NgToastService)    { }
 
   ngOnInit(): void {
     //alert("hello welcome to Our page")
@@ -33,7 +33,7 @@ userFilter:any={name:''};
       address  :['',Validators.required],
       services :['',Validators.required],
     })
-    this.getAlldata()    // to rendeer on screen data
+    this.getAlldata()    // to render on screen data
 
   }
  
@@ -60,10 +60,12 @@ addRest(){
 
 this.api.postResturent(this.restaurentModelObj).subscribe(res=>{
  // console.log(res);
-  alert("record added sucessfully");
+ // alert("record added sucessfully");
+ this.toast.success({detail:"Update Message",summary:'Record Added Sucessfully',duration:4000})
 //clear fill form
-let ref= document.getElementById('clear');
-ref?.click();
+
+//let ref= document.getElementById('clear');
+//ref?.click();
 
 
   this.formValue.reset()
@@ -90,7 +92,8 @@ this.allResturentData = res;
 deleteResto(data:any){
   if(confirm('Are you sure to delete record?'))
   this.api.deleteResturent(data.id).subscribe(res=>{
-    alert("Record deleted sucessfully")
+   // alert("Record deleted sucessfully")
+    this.toast.info({detail:'Delete Notification',summary:'Record deleted sucessfully',duration:4000})
     this.getAlldata();                  // latest data before refresh
   })
 }
@@ -123,7 +126,8 @@ updateRest(){
   this.restaurentModelObj.services  =this.formValue.value.services;
 
 this.api.updateResturent(this.restaurentModelObj,this.restaurentModelObj.id).subscribe(res=>{
-  alert("updated sucessfully")
+  //alert("updated sucessfully")
+  this.toast.success({detail:"Update Message",summary:'Updated sucessfully',duration:4000})
   this.formValue.reset()
   this.getAlldata();  // when we create data before refresh it should render no need to refresh on adding
 
@@ -132,7 +136,9 @@ err=>{
   alert("something went wrong!!!");
 })
 }
-
+logout(){
+  this.toast.success({detail:"Update Message",summary:'Logged out sucessfully',duration:4000})
+}
 
 
 

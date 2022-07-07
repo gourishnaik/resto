@@ -5,7 +5,7 @@
 
 <div class="d-flex">
 <button (click)="clickaddresto()"class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Restaurent</button>
-&nbsp;&nbsp; <button routerLink="/login" class="btn btn-warning ">Logout</button>
+&nbsp;&nbsp; <button routerLink="/login" (click)="logout()"   class="btn btn-warning ">Logout</button>
 </div>
         
 </div>
@@ -70,8 +70,8 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">RESTUARENT RECORDS</h5>
-          <button type="button"class="btn-close "  data-bs-dismiss="modal" aria-label="Close">
+          <h5  style="font-size:26px;color: blue;font-weight: 700;"class="modal-title" id="exampleModalLabel">RESTUARENT RECORDS</h5>
+          <button style="font-size: 20px;"type="button"class="btn-close "  data-bs-dismiss="modal" aria-label="Close">
           </button>
         </div>
 
