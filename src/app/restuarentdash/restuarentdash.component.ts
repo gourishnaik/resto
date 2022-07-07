@@ -64,8 +64,8 @@ this.api.postResturent(this.restaurentModelObj).subscribe(res=>{
  this.toast.success({detail:"Update Message",summary:'Record Added Sucessfully',duration:4000})
 //clear fill form
 
-//let ref= document.getElementById('clear');
-//ref?.click();
+//let ref= document.getElementById('close');
+
 
 
   this.formValue.reset()
@@ -130,12 +130,14 @@ this.api.updateResturent(this.restaurentModelObj,this.restaurentModelObj.id).sub
   this.toast.success({detail:"Update Message",summary:'Updated sucessfully',duration:4000})
   this.formValue.reset()
   this.getAlldata();  // when we create data before refresh it should render no need to refresh on adding
+ 
 
 },
 err=>{
   alert("something went wrong!!!");
 })
 }
+
 logout(){
   this.toast.success({detail:"Update Message",summary:'Logged out sucessfully',duration:4000})
 }

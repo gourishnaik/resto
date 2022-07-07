@@ -69,14 +69,14 @@
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5  style="font-size:26px;color: blue;font-weight: 700;"class="modal-title" id="exampleModalLabel">RESTUARENT RECORDS</h5>
+        <div style="background:blue" class="modal-header">
+          <h5  style="font-size:26px;color:white;font-weight: 700;margin-left: 62px;"class="modal-title" id="exampleModalLabel">RESTUARENT RECORDS</h5>
           <button style="font-size: 20px;"type="button"class="btn-close "  data-bs-dismiss="modal" aria-label="Close">
           </button>
         </div>
 
         <!--MODAL BOX-->
-        <div class="modal-body">
+        <div style="background: white;"class="modal-body">
             <!--form -->
             <form [formGroup]="formValue">
               <div class="form-group">
@@ -115,10 +115,10 @@
               <br>
               </form>
         </div>
-        <div class="modal-footer">
+        <div style="background: blue;"class="modal-footer">
           <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
-          <button *ngIf="showadd" type="button"[disabled]="formValue.invalid" class="btn btn-primary" (click)="addRest()">Add details</button>
-          <button *ngIf="showbtn"type="button"[disabled]="formValue.invalid" class="btn btn-primary" (click)="updateRest()">Update details</button>
+          <button *ngIf="showadd" type="button"[disabled]="formValue.invalid" class="btn btn-success" (click)="addRest()">Add details</button>
+          <button *ngIf="showbtn"type="button"[disabled]="formValue.invalid" class="btn btn-success" (click)="updateRest()">Update details</button>
         </div>
       </div>
     </div>

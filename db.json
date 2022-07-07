@@ -5,7 +5,7 @@
       "name": "max",
       "email": "max@gmail.com",
       "mobile": 3817372234,
-      "address": "raipur",
+      "address": "raiput",
       "services": "chai pani"
     },
     {
@@ -34,10 +34,26 @@
     },
     {
       "id": 11,
-      "name": "jeet",
-      "email": "jam@gmail.com",
-      "mobile": 9898589856,
-      "address": "gujrat",
+      "name": "dff",
+      "email": "czx@gmail.com",
+      "mobile": 4545454545,
+      "address": "dsds",
+      "services": "sds"
+    },
+    {
+      "id": 12,
+      "name": "dsdsddvdvdv",
+      "email": "eded@gmail.com",
+      "mobile": 258525856,
+      "address": "kwr",
+      "services": "sds"
+    },
+    {
+      "id": 13,
+      "name": "dsdsd",
+      "email": "sdsd@gmail.com",
+      "mobile": 2121211221,
+      "address": "kwr",
       "services": "chai"
     }
   ],
