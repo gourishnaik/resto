@@ -17,14 +17,6 @@
       "services": "chai m"
     },
     {
-      "id": 8,
-      "name": "marsh",
-      "email": "yash@gmail.com",
-      "mobile": 9856458352,
-      "address": "delhi",
-      "services": "chai"
-    },
-    {
       "id": 9,
       "name": "jack",
       "email": "jack@gmail.com",

@@ -1,3 +1,4 @@
+
 h2{
     font-size: 20px;
     text-transform: uppercase;
@@ -20,9 +21,11 @@ input.ng-touched.ng-valid{
 }
 .container{
     background: orange;
+    
 }
 .content-body{
     background:whitesmoke;
+    
 }
 .pagination{
     padding:20px 16px;
