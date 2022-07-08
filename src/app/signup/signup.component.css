@@ -9,9 +9,9 @@
     background: lightgoldenrodyellow; */
 
 
-    width: 550px;
-    height: 577px;
-    background: rgba(0, 0, 0, 0.5);
+    width: 487px;
+    height: 582px;
+    background: rgba(0, 0, 0, 0.7);
     color: aliceblue;
     top: 50%;
     left: 50%;
@@ -19,6 +19,6 @@
     transform: translate(-50%,-50%);
     box-sizing: border-box;
     padding: 13px 30px;  
-    border:1px solid orange; 
+    border:1px solid white; 
 
 }
