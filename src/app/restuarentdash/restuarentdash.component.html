@@ -117,7 +117,7 @@
         </div>
         <div style="background: blue;"class="modal-footer">
           <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
-          <button *ngIf="showadd" type="button"[disabled]="formValue.invalid" class="btn btn-success" (click)="addRest()">Add details</button>
+          <button *ngIf="showadd" type="button"[disabled]="formValue.invalid" class="btn btn-success"(click)="addRest()">Add details</button>
           <button *ngIf="showbtn"type="button"[disabled]="formValue.invalid" class="btn btn-success" (click)="updateRest()">Update details</button>
         </div>
       </div>

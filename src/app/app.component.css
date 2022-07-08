@@ -1,9 +1,11 @@
 
 .content-body{
-    min-height:114%;
- /*    padding: 2px 1rem; */ 
-      padding: 18px 0.5rem;
-    display: block;
-    background: linear-gradient(rgba(67, 119, 0, 0.688),rgba(44, 0, 4, 0.932));
-    
+  min-height:114%;
+  /*    padding: 2px 1rem; */ 
+       padding: 18px 0.5rem;
+     display: block;
+     background: linear-gradient(rgba(67, 119, 0, 0.688),rgba(44, 0, 4, 0.932));
+   
+     
 }
+
