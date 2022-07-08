@@ -4,7 +4,7 @@
 .card{
   
     width: 550px;
-    height: 420px;
+    height: 393px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     top: 50%;
@@ -12,7 +12,7 @@
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
-    padding: 70px 30px;  
+    padding: 31px 40px;  
     border:1px solid orange;
     /*margin-top: 10px;
     border:1px solid orange;
