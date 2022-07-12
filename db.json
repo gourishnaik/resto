@@ -1,19 +1,11 @@
 {
   "posts": [
     {
-      "id": 6,
-      "name": "max",
-      "email": "max@gmail.com",
-      "mobile": 3817372234,
-      "address": "raiput",
-      "services": "chai pani"
-    },
-    {
       "id": 7,
       "name": "jam",
       "email": "jam@gmail.com",
       "mobile": 4545454541,
-      "address": "raipur",
+      "address": "raipuri",
       "services": "chai m"
     },
     {
@@ -47,6 +39,14 @@
       "mobile": 258525856,
       "address": "kwr",
       "services": "sds"
+    },
+    {
+      "id": 13,
+      "name": "dummy",
+      "email": "dummy@gmail.com",
+      "mobile": 89545685646,
+      "address": "thane",
+      "services": "chai"
     }
   ],
   "comments": [],

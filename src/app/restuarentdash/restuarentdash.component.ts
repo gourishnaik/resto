@@ -61,6 +61,7 @@ addRest(){
 this.api.postResturent(this.restaurentModelObj).subscribe(res=>{
  // console.log(res);
  // alert("record added sucessfully");
+ //if(confirm('Are you sure to add record?'))
  this.toast.success({detail:"Update Message",summary:'Record Added Sucessfully',duration:4000})
 //clear fill form
 
