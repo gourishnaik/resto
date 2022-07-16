@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup, FormBuilder,Validator,FormControl, Validators} from '@angular/forms';
+import {FormGroup, FormBuilder,Validator, Validators,FormControl} from '@angular/forms';
 import { ApiService } from '../shared/api.service';
 import { ResturentData } from './resturent.model';
 import{NgToastService} from 'ng-angular-popup';
